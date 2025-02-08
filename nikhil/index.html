@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple website to ask my girlfriend to be my valantine">
+    <title>Valantine</title>
+    <style>
+        /* style.css */
+
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.valantine {
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 90%; /* Make it responsive */
+}
+
+.pic {
+    margin-bottom: 20px;
+}
+
+.picture {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 300px; /* Limit max width for larger screens */
+}
+
+.question {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Space between buttons */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.yes-btn {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+.no-btn {
+    background-color: #f44336; /* Red */
+    color: white;
+}
+
+button:hover {
+    opacity: 0.8; /* Slightly fade on hover */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+    .question {
+        font-size: 1.2em; /* Smaller font size on mobile */
+    }
+
+    button {
+        padding: 8px 16px; /* Smaller button padding */
+        font-size: 0.9em; /* Smaller font size for buttons */
+    }
+}
+    </style>
+</head>
+<body>
+
+    
+    <div class="valantine">
+        <div class="pic">
+            <img class="picture" src='flowers- heart bear.webp' alt="picture of teddy bear with flowers"/>
+        </div>
+        <div>
+            <p class="question">Will you be my Valantine?</p>
+        </div>
+        <div class="buttons">
+            <button class="yes-btn">Yes</button>
+            <button class="no-btn">No</button>
+        </div>
+    </div>
+    
+
+
+<script src="random.js"></script>
+</body>
+</html>
